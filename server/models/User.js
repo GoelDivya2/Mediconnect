@@ -87,6 +87,7 @@ const userSchema = new mongoose.Schema(
 
     qualification: {
       type: String,
+      required: isDoc,
     },
 
     experience: {
@@ -96,14 +97,17 @@ const userSchema = new mongoose.Schema(
 
     certification: {
       type: String,
+      required: isDoc,
     },
 
     clinicName: {
       type: String,
+      required: isDoc,
     },
 
     clinicAddress: {
       type: String,
+      required: isDoc,
     },
 
     city: {
@@ -125,6 +129,7 @@ const userSchema = new mongoose.Schema(
     consultationFee: {
       type: Number,
       min: 0,
+      required: isDoc,
     },
 
     // Same appointment duration for all working days
